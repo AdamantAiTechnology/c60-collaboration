@@ -1,491 +1,144 @@
-/* Container */
-.container {
-    max-width: var(--container-width);
-    margin: 0 auto;
-    padding: 0 var(--container-padding);
-}
-
-/* Sections */
-section {
-    padding: var(--section-padding) 0;
-    position: relative;
-}
-
-.section-alt {
-    background: var(--bg-alt);
-}
-
-/* Section Header */
-.section-header {
-    max-width: 800px;
-    margin-bottom: var(--gap-lg);
-}
-
-.section-header.centered {
-    text-align: center;
-    max-width: 100%;
-}
-
-.section-label {
-    font-size: var(--font-size-tiny);
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: var(--text-gray);
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.section-title {
-    font-size: var(--font-size-h1);
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: var(--gap-sm);
-}
-
-.section-description {
-    font-size: var(--font-size-h3);
-    color: var(--text-light);
-    line-height: 1.6;
-}
-
-/* Hero Section */
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    padding: 80px 0;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    right: -200px;
-    top: -200px;
-    width: 800px;
-    height: 800px;
-    background: radial-gradient(circle, rgba(255, 107, 0, 0.06) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 700px;
-}
-
-.hero-label {
-    font-size: var(--font-size-small);
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: var(--text-gray);
-    font-weight: 600;
-    margin-bottom: var(--gap-sm);
-}
-
-.hero-accent {
-    width: 40px;
-    height: 4px;
-    background: var(--primary);
-    margin-bottom: var(--gap-md);
-}
-
-.hero h1 {
-    font-size: var(--font-size-hero);
-    font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: var(--gap-md);
-}
-
-.hero h1 .accent {
-    color: var(--primary);
-}
-
-.hero-description {
-    font-size: 22px;
-    color: var(--text-light);
-    line-height: 1.5;
-    margin-bottom: var(--gap-md);
-}
-
-.hero-highlight {
-    font-size: var(--font-size-h3);
-    font-weight: 600;
-    color: var(--primary);
-    border-left: 4px solid var(--primary);
-    padding-left: var(--gap-sm);
-    line-height: 1.4;
-    margin-top: 40px;
-}
-
-/* Problem Grid */
-.problem-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--gap-md);
-}
-
-.problem-card {
-    padding: var(--gap-md);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    transition: all 0.3s var(--animation);
-}
-
-.problem-card:hover {
-    border-color: var(--primary);
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
-}
-
-.problem-icon {
-    width: 12px;
-    height: 12px;
-    background: var(--primary);
-    border-radius: 50%;
-    margin-bottom: var(--gap-sm);
-}
-
-.problem-card h3 {
-    font-size: var(--font-size-h3);
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-
-.problem-card p {
-    font-size: var(--font-size-body);
-    color: var(--text-light);
-    line-height: 1.6;
-}
-
-/* Loss Highlight */
-.loss-highlight {
-    background: linear-gradient(135deg, #FFF5F0 0%, #FFFFFF 100%);
-    padding: var(--gap-lg);
-    border-radius: var(--radius-lg);
-    border: 2px solid var(--primary);
-    margin-bottom: 40px;
-}
-
-.loss-number {
-    font-size: 72px;
-    font-weight: 900;
-    color: var(--primary);
-    line-height: 1;
-    margin-bottom: 15px;
-}
-
-.loss-text {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--text);
-}
-
-/* Method Diagram */
-.method-diagram {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-top: 50px;
-}
-
-.method-step {
-    flex: 1;
-    text-align: center;
-    padding: 40px var(--gap-md);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    transition: all 0.3s var(--animation);
-}
-
-.method-step:hover {
-    border-color: var(--primary);
-    box-shadow: 0 10px 30px rgba(255, 107, 0, 0.1);
-}
-
-.method-number {
-    width: 50px;
-    height: 50px;
-    background: var(--primary);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: 800;
-    margin: 0 auto var(--gap-sm);
-}
-
-.method-step h3 {
-    font-size: var(--font-size-h3);
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-
-.method-step p {
-    font-size: var(--font-size-body);
-    color: var(--text-light);
-    line-height: 1.5;
-}
-
-/* Benefits Grid */
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--gap-md);
-    margin-top: 50px;
-}
-
-.benefit-card {
-    padding: 40px var(--gap-md);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    transition: all 0.3s var(--animation);
-}
-
-.benefit-card:hover {
-    border-color: var(--primary);
-    transform: translateY(-5px);
-}
-
-.benefit-icon {
-    width: 50px;
-    height: 50px;
-    background: var(--primary);
-    border-radius: var(--radius-sm);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: var(--gap-sm);
-    font-size: 24px;
-}
-
-.benefit-card h3 {
-    font-size: var(--font-size-h3);
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-
-.benefit-card p {
-    font-size: var(--font-size-body);
-    color: var(--text-light);
-    line-height: 1.5;
-}
-
-/* KPI Section */
-.kpi-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--gap-md);
-    margin-top: 50px;
-}
-
-.kpi-card {
-    text-align: center;
-    padding: 40px var(--gap-md);
-    background: linear-gradient(135deg, #FFF5F0 0%, #FFFFFF 100%);
-    border-radius: var(--radius-md);
-    border: 1px solid var(--border);
-}
-
-.kpi-label {
-    font-size: var(--font-size-small);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--text-gray);
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.kpi-value {
-    font-size: 48px;
-    font-weight: 900;
-    color: var(--primary);
-    margin-bottom: 10px;
-}
-
-.kpi-change {
-    font-size: var(--font-size-h3);
-    color: var(--text);
-    font-weight: 600;
-}
-
-/* Pricing Section */
-.pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--gap-md);
-    margin-top: 50px;
-}
-
-.pricing-card {
-    padding: 50px 40px;
-    border: 2px solid var(--border);
-    border-radius: var(--radius-lg);
-    text-align: center;
-    transition: all 0.3s var(--animation);
-}
-
-.pricing-card.featured {
-    border-color: var(--primary);
-    background: linear-gradient(135deg, #FFF5F0 0%, #FFFFFF 100%);
-    transform: scale(1.05);
-}
-
-.pricing-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-lg);
-}
-
-.pricing-label {
-    font-size: var(--font-size-tiny);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: var(--text-gray);
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.pricing-name {
-    font-size: var(--font-size-h2);
-    font-weight: 800;
-    margin-bottom: var(--gap-sm);
-}
-
-.pricing-price {
-    font-size: 48px;
-    font-weight: 900;
-    color: var(--primary);
-    margin-bottom: 10px;
-}
-
-.pricing-period {
-    font-size: var(--font-size-body);
-    color: var(--text-gray);
-    margin-bottom: var(--gap-md);
-}
-
-.pricing-features {
-    list-style: none;
-    text-align: left;
-    margin-bottom: var(--gap-md);
-}
-
-.pricing-features li {
-    padding: 12px 0;
-    border-bottom: 1px solid var(--border);
-    font-size: var(--font-size-body);
-}
-
-.pricing-features li:last-child {
-    border-bottom: none;
-}
-
-/* CTA Button */
-.cta-button {
-    display: inline-block;
-    padding: 18px 40px;
-    background: var(--primary);
-    color: white;
-    font-size: var(--font-size-body);
-    font-weight: 700;
-    text-decoration: none;
-    border-radius: var(--radius-sm);
-    transition: all 0.3s var(--animation);
-}
-
-.cta-button:hover {
-    background: var(--secondary);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-orange);
-}
-
-/* Contact Form */
-.contact-form {
-    max-width: 600px;
-    margin: 50px auto 0;
-}
-
-.form-group {
-    margin-bottom: 25px;
-}
-
-.form-group label {
-    display: block;
-    font-size: var(--font-size-small);
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 15px var(--gap-sm);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    font-family: var(--font-family);
-    font-size: var(--font-size-body);
-    transition: all 0.3s var(--animation);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.1);
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 150px;
-}
-
-.form-submit {
-    text-align: center;
-}
-
-/* Footer */
-footer {
-    padding: 40px 0;
-    border-top: 1px solid var(--border);
-    text-align: center;
-}
-
-footer p {
-    font-size: var(--font-size-small);
-    color: var(--text-gray);
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-    .hero h1 {
-        font-size: 48px;
-    }
-    .benefits-grid,
-    .pricing-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 0 var(--gap-sm);
-    }
-    .hero h1 {
-        font-size: 36px;
-    }
-    .section-title {
-        font-size: 32px;
-    }
-    .benefits-grid,
-    .pricing-grid,
-    .method-diagram {
-        grid-template-columns: 1fr;
-    }
-    .method-diagram {
-        flex-direction: column;
-    }
-}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullerene C60 × Ритуалы Трансформации</title>
+    <style>
+        @font-face {
+            font-family: 'Golos Text';
+            src: url('https://full-en.com/assets/golos-text.woff2') format('woff2');
+            font-weight: 400 900;
+            font-display: swap;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #FF6B00;
+            --secondary: #E64F09;
+            --text: #111111;
+            --text-light: #333333;
+            --text-gray: #888888;
+            --bg: #FFFFFF;
+            --border: rgba(17, 17, 17, 0.1);
+            --animation: cubic-bezier(0.550, 0.385, 0.355, 1.000);
+        }
+        
+        body {
+            font-family: 'Golos Text', -apple-system, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        section {
+            padding: 100px 0;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 30px;
+        }
+        
+        .hero h1 .accent {
+            color: var(--primary);
+        }
+        
+        .hero-description {
+            font-size: 22px;
+            color: var(--text-light);
+            margin-bottom: 30px;
+        }
+        
+        .hero-highlight {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--primary);
+            border-left: 4px solid var(--primary);
+            padding-left: 20px;
+            margin-top: 40px;
+        }
+        
+        .section-title {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 18px 40px;
+            background: var(--primary);
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s var(--animation);
+        }
+        
+        .cta-button:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>
+                Fullerene C60 <span class="accent">×</span><br>
+                Ритуалы Трансформации
+            </h1>
+            <p class="hero-description">
+                Премиальный wellness-продукт на стыке клеточной науки<br>
+                и индивидуальных гипнотических практик.
+            </p>
+            <p class="hero-highlight">
+                Не просто добавка — осознанный ритуал и новый клиентский опыт.
+            </p>
+            <a href="#contact" class="cta-button">Связаться с нами</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Готовы обсудить коллаборацию?</h2>
+            <p>Свяжитесь с нами для получения полной презентации.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Full Energy × Ритуалы Трансформации</p>
+        </div>
+    </footer>
+</body>
+</html>
