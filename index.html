@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullerene C60 × Ритуалы Трансформации | Инвестор-предложение</title>
+    <meta name="description" content="Премиальный wellness-продукт на стыке клеточной науки и индивидуальных гипнотических практик">
+    <style>
+        @font-face {
+            font-family: 'Golos Text';
+            src: url('https://full-en.com/assets/golos-text.woff2') format('woff2');
+            font-weight: 400 900;
+            font-display: swap;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #FF6B00;
+            --secondary: #E64F09;
+            --text: #111111;
+            --text-light: #333333;
+            --text-gray: #888888;
+            --bg: #FFFFFF;
+            --border: rgba(17, 17, 17, 0.1);
+            --animation: cubic-bezier(0.550, 0.385, 0.355, 1.000);
+        }
+
+        body {
+            font-family: 'Golos Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 80px 0;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            right: -200px;
+            top: -200px;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(255, 107, 0, 0.06) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+        }
+
+        .hero-label {
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--text-gray);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero-accent {
+            width: 40px;
+            height: 4px;
+            background: var(--primary);
+            margin-bottom: 30px;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 30px;
+        }
+
+        .hero h1 .accent {
+            color: var(--primary);
+        }
+
+        .hero-description {
+            font-size: 22px;
+            color: var(--text-light);
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .hero-highlight {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--primary);
+            border-left: 4px solid var(--primary);
+            padding-left: 20px;
+            line-height: 1.4;
+            margin-top: 40px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-header {
+            max-width: 800px;
+            margin-bottom: 60px;
+        }
+
+        .section-label {
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--text-gray);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .section-description {
+            font-size: 20px;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Problem Section */
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .problem-card {
+            padding: 30px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            transition: all 0.3s var(--animation);
+        }
+
+        .problem-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .problem-icon {
+            width: 12px;
+            height: 12px;
+            background: var(--primary);
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .problem-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .problem-card p {
+            font-size: 16px;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Loss Section */
+        .loss-highlight {
+            background: linear-gradient(135deg, #FFF5F0 0%, #FFFFFF 100%);
+            padding: 60px;
+            border-radius: 16px;
+            border: 2px solid var(--primary);
+            margin-bottom: 40px;
+        }
+
+        .loss-number {
+            font-size: 72px;
+            font-weight: 900;
+            color: var(--primary);
+            line-height: 1;
+            margin-bottom: 15px;
+        }
+
+        .loss-text {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        /* Method Section */
+        .method-diagram {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .method-step {
+            flex: 1;
+            text-align: center;
+            padding: 40px 30px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            transition: all 0.3s var(--animation);
+        }
+
+        .method-step:hover {
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(255, 107, 0, 0.1);
+        }
+
+        .method-number {
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 800;
+            margin: 0 auto 20px;
+        }
+
+        .method-step h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .method-step p {
+            font-size: 16px;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .benefit-card {
+            padding: 40px 30px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            transition: all 0.3s var(--animation);
+        }
+
+        .benefit-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .benefit-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .benefit-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .benefit-card p {
+            font-size: 16px;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        /* KPI Section */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .kpi-card {
+            text-align: center;
+            padding: 40px 30px;
+            background: linear-gradient(135deg, #FFF5F0 0%, #FFFFFF 100%);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .kpi-label {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-gray);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .kpi-value {
+            font-size: 48px;
+            font-weight: 900;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .kpi-change {
+            font-size: 20px;
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        /* Pricing Section */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .pricing-card {
+            padding: 50px 40px;
+            border: 2px solid var(--border);
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.3s var(--animation);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--primary);
+            background: linear-gradient(135deg, #FFF5F0 0%, #FFFFFF 100%);
+            transform: scale(1.05);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-gray);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .pricing-name {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .pricing-price {
+            font-size: 48px;
+            font-weight: 900;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .pricing-period {
+            font-size: 16px;
+            color: var(--text-gray);
+            margin-bottom: 30px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .pricing-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 16px;
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 18px 40px;
+            background: var(--primary);
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s var(--animation);
+        }
+
+        .cta-button:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 107, 0, 0.3);
+        }
+
+        /* Contact Section */
+        .contact-form {
+            max-width: 600px;
+            margin: 50px auto 0;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px 20px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-family: 'Golos Text', sans-serif;
+            font-size: 16px;
+            transition: all 0.3s var(--animation);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 48px;
+            }
+            .benefits-grid,
+            .pricing-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            .hero h1 {
+                font-size: 36px;
+            }
+            .section-title {
+                font-size: 32px;
+            }
+            .benefits-grid,
+            .pricing-grid,
+            .method-diagram {
+                grid-template-columns: 1fr;
+            }
+            .method-diagram {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-label">Инвестор-презентация</p>
+                <div class="hero-accent"></div>
+                <h1>
+                    Fullerene C60 <span class="accent">×</span><br>
+                    Ритуалы Трансформации
+                </h1>
+                <p class="hero-description">
+                    Премиальный wellness-продукт на стыке клеточной науки<br>
+                    и индивидуальных гипнотических практик.
+                </p>
+                <p class="hero-highlight">
+                    Не просто добавка — осознанный ритуал и новый клиентский опыт.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Рыночный Контекст</p>
+                <h2 class="section-title">Проблема рынка C60</h2>
+                <p class="section-description">
+                    Рынок supplements перенасыщен. C60 теряется среди сотен аналогов.
+                </p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon"></div>
+                    <h3>Коммодитизация</h3>
+                    <p>Схожие формулы, борьба ценой, низкая дифференциация</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"></div>
+                    <h3>Усталость от добавок</h3>
+                    <p>Рациональные тезисы без эмоциональной вовлеченности</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"></div>
+                    <h3>Отсутствие опытного формата</h3>
+                    <p>Нет ritual/experiential wellness — только таблетки</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"></div>
+                    <h3>Слабая история бренда</h3>
+                    <p>Научный нарратив без «мифа» не конвертирует wide аудиторию</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loss Section -->
+    <section id="loss" style="background: #FAFAFA;">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Текущая Ситуация</p>
+                <h2 class="section-title">Что компании теряют СЕЙЧАС</h2>
+            </div>
+            <div class="loss-highlight">
+                <div class="loss-number">20-40%</div>
+                <p class="loss-text">Потеря оборота в смежных каналах</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <h3>Упущенный wellness-сегмент</h3>
+                    <p>Йога-студии, ретриты, коучи, комьюнити — недоиспользованы</p>
+                </div>
+                <div class="problem-card">
+                    <h3>Низкий LTV</h3>
+                    <p>Отсутствие полноценного опыта снижает повторные покупки</p>
+                </div>
+                <div class="problem-card">
+                    <h3>Слабая brand-память</h3>
+                    <p>Без эмоциональной истории товар не удерживает внимание</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Method Section -->
+    <section id="method">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Уникальная Методология</p>
+                <h2 class="section-title">Наш Метод и Уникальность</h2>
+                <p class="section-description">
+                    C60 не только как вещество, но и как символ совершенной структуры — ядро премиального ритуала
+                </p>
+            </div>
+            <div class="method-diagram">
+                <div class="method-step">
+                    <div class="method-number">01</div>
+                    <h3>Переписывание Паттернов</h3>
+                    <p>Индивидуальные медитации для деструктивных родовых программ</p>
+                </div>
+                <div class="method-step">
+                    <div class="method-number">02</div>
+                    <h3>C60 как Символ</h3>
+                    <p>Молекула идеальной формы — ядро трансформационного ритуала</p>
+                </div>
+                <div class="method-step">
+                    <div class="method-number">03</div>
+                    <h3>Контент-Экосистема</h3>
+                    <p>Аудиосессии, сценарии, brand-myth, визуальные ритуалы</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" style="background: #FAFAFA;">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Почему Это Выгодно</p>
+                <h2 class="section-title">Бизнес-выгоды для партнёра</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Рост Среднего Чека</h3>
+                    <p>Комплекты «C60 + Ritual» вместо одной бутылки</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⭐</div>
+                    <h3>Дифференциация</h3>
+                    <p>Первая категория «C60 как ритуал» — сложнее копировать</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔄</div>
+                    <h3>Retention & LTV</h3>
+                    <p>Серии практик и подписка возвращают клиента</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌐</div>
+                    <h3>Новые Каналы</h3>
+                    <p>Wellness-ритейл, ретриты, подарочный рынок, B2B</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📢</div>
+                    <h3>PR & Сарафан</h3>
+                    <p>История, которой хочется делиться</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <h3>Юнит-экономика</h3>
+                    <p>Выше конверсия и CTR за счёт сторителлинга</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KPI Section -->
+    <section id="kpi">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Финансовые Проекции</p>
+                <h2 class="section-title">Что вы получаете В ПЛЮС</h2>
+                <p class="section-description">Ориентиры по метрикам (гипотезы, финал зависит от креатива)</p>
+            </div>
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <p class="kpi-label">Средний чек (AOV)</p>
+                    <div class="kpi-value">$297+</div>
+                    <p class="kpi-change">от $79</p>
+                </div>
+                <div class="kpi-card">
+                    <p class="kpi-label">Конверсия</p>
+                    <div class="kpi-value">+20-50%</div>
+                    <p class="kpi-change">премиум-история</p>
+                </div>
+                <div class="kpi-card">
+                    <p class="kpi-label">LTV</p>
+                    <div class="kpi-value">+30-70%</div>
+                    <p class="kpi-change">через серии ритуалов</p>
+                </div>
+                <div class="kpi-card">
+                    <p class="kpi-label">CAC</p>
+                    <div class="kpi-value">-10-25%</div>
+                    <p class="kpi-change">рост CTR и доверия</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" style="background: #FAFAFA;">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Инвестиционное Предложение</p>
+                <h2 class="section-title">Пакеты & Цены</h2>
+                <p class="section-description">
+                    Без медицинских обещаний — фокус на опыт и коммерческую ценность
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <p class="pricing-label">Starter</p>
+                    <h3 class="pricing-name">Пилотный Спринт</h3>
+                    <div class="pricing-price">$5,000</div>
+                    <p class="pricing-period">72 часа</p>
+                    <ul class="pricing-features">
+                        <li>1 Аудиоритуал (10-15 мин)</li>
+                        <li>5 Short hooks</li>
+                        <li>VSL-концепт</li>
+                        <li>Brand-myth мини-док</li>
+                        <li>1 итерация</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Запросить</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <p class="pricing-label">Recommended</p>
+                    <h3 class="pricing-name">Signature Launch</h3>
+                    <div class="pricing-price">$25,000</div>
+                    <p class="pricing-period">10-14 дней</p>
+                    <ul class="pricing-features">
+                        <li>2-3 Ритуала</li>
+                        <li>15-20 hooks</li>
+                        <li>VSL + Лендинг</li>
+                        <li>5 Email-писем</li>
+                        <li>8-10 Месседжинг-пилларов</li>
+                        <li>2 итерации</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Начать</a>
+                </div>
+
+                <div class="pricing-card">
+                    <p class="pricing-label">Enterprise</p>
+                    <h3 class="pricing-name">Flagship/License</h3>
+                    <div class="pricing-price">$50,000+</div>
+                    <p class="pricing-period">3-6 недель</p>
+                    <ul class="pricing-features">
+                        <li>Полная контент-система</li>
+                        <li>Упаковка ритуального комплекта</li>
+                        <li>Партнёрский go-to-market</li>
+                        <li>Обучение команд</li>
+                        <li>Эксклюзивная лицензия</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Обсудить</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header" style="text-align: center; max-width: 100%;">
+                <p class="section-label">Свяжитесь с Нами</p>
+                <h2 class="section-title">Готовы обсудить коллаборацию?</h2>
+                <p class="section-description">
+                    Заполните форму, и мы свяжемся с вами в течение 24 часов
+                </p>
+            </div>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Имя *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Компания</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit" class="cta-button">Отправить запрос</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Full Energy × Ритуалы Трансформации. Конфиденциальная коллаборация.</p>
+        </div>
+    </footer>
+</body>
+</html>
