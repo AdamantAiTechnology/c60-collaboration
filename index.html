@@ -1,521 +1,81 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SOULC60 — Коллаборация нового уровня сознания</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C60 Collaboration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
 
-  <!-- ========== НАВИГАЦИЯ ========== -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <div class="nav-logo">
-        <span class="logo-soul">SOUL</span><span class="logo-c60">C60</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#essence">Суть</a></li>
-        <li><a href="#synergy">Синергия</a></li>
-        <li><a href="#partners">Партнёрам</a></li>
-        <li><a href="#program">Программа</a></li>
-        <li><a href="#contact" class="nav-cta">Стать партнёром</a></li>
-      </ul>
-      <button class="burger" id="burger" aria-label="menu">
-        <span></span><span></span><span></span>
-      </button>
+<body class="bg-black text-white font-sans">
+
+<!-- HERO -->
+<section class="max-w-6xl mx-auto px-6 py-24 text-center">
+  <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+    C60 — Next Generation Longevity Platform
+  </h1>
+  <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
+    We build a scalable ecosystem around advanced antioxidant technology
+    targeting the global longevity market.
+  </p>
+  <button class="bg-white text-black px-8 py-4 rounded-xl font-semibold hover:scale-105 transition">
+    Request Investor Deck
+  </button>
+</section>
+
+<!-- PROBLEM -->
+<section class="bg-white text-black py-20">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">The Problem</h2>
+    <p class="text-lg text-gray-700">
+      Aging is driven by oxidative stress. Existing solutions are fragmented,
+      ineffective, and lack scalability.
+    </p>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="py-20">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Our Solution</h2>
+    <p class="text-gray-300">
+      C60 is a powerful antioxidant platform with potential to redefine
+      longevity and cellular health.
+    </p>
+  </div>
+</section>
+
+<!-- PRODUCT -->
+<section class="bg-gray-900 py-20">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+    <div class="bg-black p-6 rounded-2xl">
+      <h3 class="text-xl font-semibold mb-3">Product</h3>
+      <p class="text-gray-400">Consumer-ready longevity solutions</p>
     </div>
-  </nav>
-
-  <!-- ========== HERO ========== -->
-  <section class="hero" id="hero">
-    <canvas id="c60-canvas"></canvas>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="hero-label">ЭКСКЛЮЗИВНАЯ КОЛЛАБОРАЦИЯ</div>
-      <h1 class="hero-title">
-        Там, где древнее<br />
-        <em>исцеление</em><br />
-        встречает молекулу<br />
-        <span class="gold-text">будущего</span>
-      </h1>
-      <p class="hero-subtitle">
-        Медитация. Гипнотическая деструкция родовых травм.<br />
-        Фуллерен C60 — молекула, меняющая биологию.
-      </p>
-      <div class="hero-actions">
-        <a href="#essence" class="btn-primary">Открыть мир SOULC60</a>
-        <a href="#partners" class="btn-ghost">Для партнёров C60</a>
-      </div>
+    <div class="bg-black p-6 rounded-2xl">
+      <h3 class="text-xl font-semibold mb-3">Platform</h3>
+      <p class="text-gray-400">Ecosystem for partners and distribution</p>
     </div>
-    <div class="hero-scroll">
-      <span>Прокрутите вниз</span>
-      <div class="scroll-line"></div>
+    <div class="bg-black p-6 rounded-2xl">
+      <h3 class="text-xl font-semibold mb-3">Data</h3>
+      <p class="text-gray-400">Research and analytics layer</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ========== МАНИФЕСТ ========== -->
-  <section class="manifest" id="manifest">
-    <div class="container">
-      <div class="manifest-inner">
-        <div class="manifest-quote">
-          <blockquote>
-            «Тело помнит всё. Молекула C60 обнуляет воспаление.<br />
-            Гипноз стирает код травмы в нейронных сетях.<br />
-            Медитация возвращает душу домой.»
-          </blockquote>
-          <cite>— Философия SOULC60</cite>
-        </div>
-        <div class="manifest-ornament">
-          <svg viewBox="0 0 120 120" class="molecule-small" aria-hidden="true">
-            <g class="mol-group"></g>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- MARKET -->
+<section class="py-20 text-center">
+  <h2 class="text-3xl font-bold mb-6">Market Opportunity</h2>
+  <p class="text-gray-300">Global longevity market is growing rapidly</p>
+</section>
 
-  <!-- ========== СУТЬ ========== -->
-  <section class="essence" id="essence">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">ЧТО ТАКОЕ SOULC60</span>
-        <h2 class="section-title">Три измерения<br /><em>трансформации</em></h2>
-      </div>
-      <div class="essence-grid">
-        <div class="essence-card" data-index="01">
-          <div class="card-icon">
-            <i class="fa-solid fa-infinity"></i>
-          </div>
-          <h3>Медитация</h3>
-          <p>Глубинные практики, разработанные на пересечении нейронауки и созерцательных традиций. Не просто расслабление — полная реструктуризация состояний сознания.</p>
-          <div class="card-ornament"></div>
-        </div>
-        <div class="essence-card featured" data-index="02">
-          <div class="card-icon">
-            <i class="fa-solid fa-dna"></i>
-          </div>
-          <h3>Гипнотическая<br />деструкция травм</h3>
-          <p>Авторский метод работы с родовыми и личными травмами через трансовые состояния. Точечная работа с подсознательными программами, блокирующими развитие.</p>
-          <div class="card-badge">CORE METHOD</div>
-          <div class="card-ornament"></div>
-        </div>
-        <div class="essence-card" data-index="03">
-          <div class="card-icon">
-            <svg viewBox="0 0 40 40" class="c60-mini-icon">
-              <circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-width="1.2"/>
-              <circle cx="20" cy="8" r="2.2" fill="currentColor"/>
-              <circle cx="29" cy="13" r="2.2" fill="currentColor"/>
-              <circle cx="29" cy="27" r="2.2" fill="currentColor"/>
-              <circle cx="20" cy="32" r="2.2" fill="currentColor"/>
-              <circle cx="11" cy="27" r="2.2" fill="currentColor"/>
-              <circle cx="11" cy="13" r="2.2" fill="currentColor"/>
-            </svg>
-          </div>
-          <h3>Фуллерен C60</h3>
-          <p>Молекула с наивысшей антиоксидантной активностью из известных. Нейропротекция, клеточное восстановление, синергия с состояниями трансформации сознания.</p>
-          <div class="card-ornament"></div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- CTA -->
+<section class="bg-white text-black py-20 text-center">
+  <h2 class="text-3xl font-bold mb-6">Join the Future</h2>
+  <button class="bg-black text-white px-8 py-4 rounded-xl font-semibold">
+    Contact Us
+  </button>
+</section>
 
-  <!-- ========== СИНЕРГИЯ ========== -->
-  <section class="synergy" id="synergy">
-    <div class="synergy-bg"></div>
-    <div class="container">
-      <div class="section-header light">
-        <span class="section-label">ПОЧЕМУ ЭТО РАБОТАЕТ ВМЕСТЕ</span>
-        <h2 class="section-title">Синергетический<br /><em>эффект</em></h2>
-      </div>
-      <div class="synergy-timeline">
-        <div class="timeline-item">
-          <div class="timeline-num">01</div>
-          <div class="timeline-content">
-            <h4>Клеточная готовность</h4>
-            <p>C60 снижает оксидативный стресс и нейровоспаление — создаёт биохимическую основу для глубокой нейропластичности во время сессий.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-num">02</div>
-          <div class="timeline-content">
-            <h4>Трансовое окно</h4>
-            <p>Гипнотическая деструкция обращается к соматическим и эмоциональным паттернам, закреплённым в теле — тело, обновлённое C60, откликается глубже.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-num">03</div>
-          <div class="timeline-content">
-            <h4>Интеграция сознания</h4>
-            <p>Медитативные практики закрепляют изменения, формируют новые нейронные связи и помогают встроить трансформацию в повседневную жизнь.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-num">04</div>
-          <div class="timeline-content">
-            <h4>Устойчивый результат</h4>
-            <p>Системное применение C60 поддерживает достигнутые состояния на биологическом уровне. Трансформация становится необратимой.</p>
-          </div>
-        </div>
-      </div>
-      <div class="synergy-visual">
-        <div class="venn-container">
-          <div class="venn-circle venn-a">
-            <span>Медитация<br />&amp; Гипноз</span>
-          </div>
-          <div class="venn-circle venn-b">
-            <span>Фуллерен<br />C60</span>
-          </div>
-          <div class="venn-center">
-            <span>SOULC60<br />EFFECT</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== ПАРТНЁРАМ ========== -->
-  <section class="partners" id="partners">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">ДЛЯ ПАРТНЁРОВ C60-БРЕНДОВ</span>
-        <h2 class="section-title">Почему SOULC60 —<br /><em>ваш следующий шаг</em></h2>
-      </div>
-
-      <div class="partners-intro">
-        <p class="lead">Вы уже производите продукт, способный изменить биологию. Нам не нужно ваше портфолио. Нам нужна ваша молекула — и наша методология.</p>
-      </div>
-
-      <div class="benefits-grid">
-        <div class="benefit-card">
-          <div class="benefit-icon"><i class="fa-solid fa-chart-line"></i></div>
-          <h4>Новый рынок</h4>
-          <p>Платёжеспособная аудитория wellness, осознанности и трансформации — не пересекается с вашей текущей базой. Расширение без каннибализации.</p>
-          <div class="benefit-stat">+3 сегмента аудитории</div>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon"><i class="fa-solid fa-gem"></i></div>
-          <h4>Премиальный контекст</h4>
-          <p>Ваш C60 перестаёт быть просто БАД. Он становится частью эксклюзивного протокола трансформации. Цена восприятия и цена продажи растут.</p>
-          <div class="benefit-stat">×2–4 к воспринимаемой ценности</div>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon"><i class="fa-solid fa-handshake"></i></div>
-          <h4>Без кейсов — не помеха</h4>
-          <p>Коллаборация строится на силе метода и силе молекулы. Совместный продукт создаёт историю с нуля. Мы формируем доказательную базу вместе.</p>
-          <div class="benefit-stat">Общий старт = общая история</div>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon"><i class="fa-solid fa-rotate"></i></div>
-          <h4>Возвратные продажи</h4>
-          <p>Клиенты сессий становятся долгосрочными потребителями C60. Курсовой приём создаёт предсказуемый, повторяющийся спрос на вашу продукцию.</p>
-          <div class="benefit-stat">LTV клиента — 6–18 месяцев</div>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon"><i class="fa-solid fa-layer-group"></i></div>
-          <h4>Готовая инфраструктура</h4>
-          <p>Контент, нарратив, аудитория, методология — всё уже создано. Вы подключаетесь к системе и добавляете продукт, который делает её полной.</p>
-          <div class="benefit-stat">0 затрат на разработку метода</div>
-        </div>
-        <div class="benefit-card highlight">
-          <div class="benefit-icon"><i class="fa-solid fa-star"></i></div>
-          <h4>Эксклюзивность</h4>
-          <p>Один партнёр в категории C60. Никаких конкурентов внутри экосистемы. Ваш бренд становится официальным биологическим уровнем протокола.</p>
-          <div class="benefit-stat">EXCLUSIVE PARTNER STATUS</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== ФОРМАТЫ ========== -->
-  <section class="program" id="program">
-    <div class="program-bg"></div>
-    <div class="container">
-      <div class="section-header light">
-        <span class="section-label">ФОРМАТЫ СОТРУДНИЧЕСТВА</span>
-        <h2 class="section-title">Найдите свой<br /><em>уровень входа</em></h2>
-      </div>
-      <div class="program-cards">
-
-        <div class="program-card">
-          <div class="program-tier">TIER I</div>
-          <h3 class="program-name">Co-Brand</h3>
-          <div class="program-divider"></div>
-          <ul class="program-features">
-            <li><i class="fa-solid fa-check"></i> Совместный брендинг продукта</li>
-            <li><i class="fa-solid fa-check"></i> Упоминание в контенте и материалах</li>
-            <li><i class="fa-solid fa-check"></i> Базовый реферальный поток клиентов</li>
-            <li><i class="fa-solid fa-check"></i> Совместные публикации</li>
-          </ul>
-          <div class="program-cta">
-            <a href="#contact" class="btn-outline">Обсудить</a>
-          </div>
-        </div>
-
-        <div class="program-card featured">
-          <div class="program-tier hot">TIER II</div>
-          <div class="program-popular">РЕКОМЕНДУЕМ</div>
-          <h3 class="program-name">Protocol Partner</h3>
-          <div class="program-divider"></div>
-          <ul class="program-features">
-            <li><i class="fa-solid fa-check"></i> Интеграция C60 в официальный протокол</li>
-            <li><i class="fa-solid fa-check"></i> Совместный продукт / набор</li>
-            <li><i class="fa-solid fa-check"></i> Пакет клиентских реферралов</li>
-            <li><i class="fa-solid fa-check"></i> Совместные мероприятия и эфиры</li>
-            <li><i class="fa-solid fa-check"></i> Кросс-промо по базам аудиторий</li>
-          </ul>
-          <div class="program-cta">
-            <a href="#contact" class="btn-primary">Стать партнёром</a>
-          </div>
-        </div>
-
-        <div class="program-card">
-          <div class="program-tier">TIER III</div>
-          <h3 class="program-name">Exclusive</h3>
-          <div class="program-divider"></div>
-          <ul class="program-features">
-            <li><i class="fa-solid fa-check"></i> Эксклюзивный статус в экосистеме</li>
-            <li><i class="fa-solid fa-check"></i> Совместный ретрит-продукт</li>
-            <li><i class="fa-solid fa-check"></i> Совместный digital-курс</li>
-            <li><i class="fa-solid fa-check"></i> Revenue-sharing модель</li>
-            <li><i class="fa-solid fa-check"></i> Персональный бренд-документ</li>
-            <li><i class="fa-solid fa-check"></i> Приоритет во всех коллаборациях</li>
-          </ul>
-          <div class="program-cta">
-            <a href="#contact" class="btn-outline">Запросить оффер</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== ОПЫТ ========== -->
-  <section class="experience" id="experience">
-    <div class="container">
-      <div class="experience-inner">
-        <div class="exp-visual">
-          <div class="exp-molecule">
-            <canvas id="mol-canvas" width="380" height="380"></canvas>
-          </div>
-        </div>
-        <div class="exp-text">
-          <span class="section-label">КЛИЕНТСКИЙ ОПЫТ</span>
-          <h2 class="section-title">Что <em>чувствует</em><br />клиент SOULC60</h2>
-          <div class="exp-steps">
-            <div class="exp-step">
-              <div class="step-dot"></div>
-              <div class="step-body">
-                <h5>До первой сессии</h5>
-                <p>Клиент начинает приём C60. Тело переходит в состояние пониженного воспаления и антиоксидантной поддержки.</p>
-              </div>
-            </div>
-            <div class="exp-step">
-              <div class="step-dot"></div>
-              <div class="step-body">
-                <h5>Гипнотический сеанс</h5>
-                <p>Погружение в трансовое состояние. Прямой контакт с образами родовых программ. Деструкция на уровне подсознания.</p>
-              </div>
-            </div>
-            <div class="exp-step">
-              <div class="step-dot"></div>
-              <div class="step-body">
-                <h5>Медитативная интеграция</h5>
-                <p>Звуковые и визуальные практики для закрепления изменений. Новый нейронный паттерн фиксируется в состоянии покоя.</p>
-              </div>
-            </div>
-            <div class="exp-step">
-              <div class="step-dot"></div>
-              <div class="step-body">
-                <h5>Пролонгированный эффект</h5>
-                <p>Курсовой C60 поддерживает нейропластичность. Клиент замечает изменения в отношениях, реакциях и теле неделями после.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== ЧИСЛА ========== -->
-  <section class="numbers">
-    <div class="container">
-      <div class="numbers-grid">
-        <div class="number-item">
-          <div class="number-val" data-target="60">0</div>
-          <div class="number-label">атомов углерода<br />в молекуле C60</div>
-        </div>
-        <div class="number-item">
-          <div class="number-val" data-target="172">0</div>
-          <div class="number-label">раз сильнее<br />витамина E (антиоксидант)</div>
-        </div>
-        <div class="number-item">
-          <div class="number-val" data-target="3">0</div>
-          <div class="number-label">уровня трансформации<br />в протоколе</div>
-        </div>
-        <div class="number-item">
-          <div class="number-val" data-target="1">0</div>
-          <div class="number-label">эксклюзивный партнёр<br />в категории C60</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== ОТЗЫВЫ ========== -->
-  <section class="testimonials">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">ИСТОРИИ ТРАНСФОРМАЦИИ</span>
-        <h2 class="section-title">Голоса тех,<br /><em>кто прошёл путь</em></h2>
-      </div>
-      <div class="testimonials-slider" id="testimonials-slider">
-        <div class="testimonial-track" id="testimonial-track">
-          <div class="testimonial-card">
-            <div class="t-stars">★★★★★</div>
-            <p>«После третьей сессии я впервые в жизни почувствовала, что страх оставления — не мой. Это был страх моей бабушки. C60 поддерживал меня физически, пока шла эта работа. Ощущение невероятной лёгкости.»</p>
-            <div class="t-author">
-              <div class="t-avatar">А</div>
-              <div>
-                <strong>Анастасия, 34</strong>
-                <span>Москва · Курс SOULC60 Intensive</span>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="t-stars">★★★★★</div>
-            <p>«Как владелец C60-бренда — я сразу увидел синергию. Наши клиенты стали возвращаться с историями, которые мы не могли создать сами. Это именно тот контекст, который нужен молекуле.»</p>
-            <div class="t-author">
-              <div class="t-avatar">М</div>
-              <div>
-                <strong>Максим, основатель C60 Lab</strong>
-                <span>Партнёр Tier II</span>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="t-stars">★★★★★</div>
-            <p>«Я скептически относился к гипнозу. Но когда на фоне C60 я вошёл в транс и увидел образы, которые описала мама из своего детства — я понял: это не психология. Это что-то гораздо глубже.»</p>
-            <div class="t-author">
-              <div class="t-avatar">Д</div>
-              <div>
-                <strong>Дмитрий, 41</strong>
-                <span>Санкт-Петербург · Сессия деструкции травм</span>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="t-stars">★★★★★</div>
-            <p>«Коллаборация дала нам выход в аудиторию, которая платит не за продукт — а за трансформацию. Средний чек вырос. Клиенты стали адвокатами бренда, а не просто покупателями.»</p>
-            <div class="t-author">
-              <div class="t-avatar">Е</div>
-              <div>
-                <strong>Екатерина, CEO NanoOlive</strong>
-                <span>Exclusive Partner</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="slider-controls">
-        <button class="slider-btn" id="prev-btn" aria-label="назад"><i class="fa-solid fa-arrow-left"></i></button>
-        <div class="slider-dots" id="slider-dots"></div>
-        <button class="slider-btn" id="next-btn" aria-label="вперёд"><i class="fa-solid fa-arrow-right"></i></button>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== CTA БЛОК ========== -->
-  <section class="cta-section" id="contact">
-    <canvas id="cta-canvas"></canvas>
-    <div class="cta-overlay"></div>
-    <div class="container">
-      <div class="cta-inner">
-        <span class="section-label">НАЧНЁМ ВМЕСТЕ</span>
-        <h2 class="cta-title">Ваш бренд C60<br />заслуживает <em>истории</em></h2>
-        <p class="cta-text">Заполните форму — и мы свяжемся в течение 24 часов с персональным предложением о коллаборации</p>
-        <form class="contact-form" id="contact-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label>Ваше имя</label>
-              <input type="text" placeholder="Имя" required />
-            </div>
-            <div class="form-group">
-              <label>Бренд / Компания</label>
-              <input type="text" placeholder="Название бренда" required />
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label>Email</label>
-              <input type="email" placeholder="your@email.com" required />
-            </div>
-            <div class="form-group">
-              <label>Telegram / WhatsApp</label>
-              <input type="text" placeholder="@handle или номер" />
-            </div>
-          </div>
-          <div class="form-group full">
-            <label>Уровень партнёрства</label>
-            <select>
-              <option value="">Выберите формат</option>
-              <option>Tier I — Co-Brand</option>
-              <option>Tier II — Protocol Partner</option>
-              <option>Tier III — Exclusive</option>
-              <option>Хочу узнать подробнее</option>
-            </select>
-          </div>
-          <div class="form-group full">
-            <label>Расскажите о вашем продукте</label>
-            <textarea placeholder="Кратко опишите ваш C60-бренд, формат продукта и текущую аудиторию..." rows="4"></textarea>
-          </div>
-          <button type="submit" class="btn-primary btn-large">
-            <span>Отправить заявку</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </form>
-        <div class="form-success" id="form-success">
-          <i class="fa-solid fa-circle-check"></i>
-          <h3>Заявка принята</h3>
-          <p>Мы изучим информацию о вашем бренде и свяжемся в течение 24 часов с персональным предложением.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <div class="nav-logo">
-            <span class="logo-soul">SOUL</span><span class="logo-c60">C60</span>
-          </div>
-          <p>Протокол трансформации сознания<br />на молекулярном уровне</p>
-        </div>
-        <div class="footer-links">
-          <h5>Навигация</h5>
-          <a href="#essence">Суть подхода</a>
-          <a href="#synergy">Синергия</a>
-          <a href="#partners">Партнёрам</a>
-          <a href="#program">Форматы</a>
-        </div>
-        <div class="footer-contact">
-          <h5>Связь</h5>
-          <a href="mailto:hello@soulc60.com">hello@soulc60.com</a>
-          <a href="#">Telegram</a>
-          <a href="#">Instagram</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2025 SOULC60. Все права защищены. Информация носит ознакомительный характер и не является медицинской рекомендацией.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
