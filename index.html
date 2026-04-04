@@ -1,81 +1,299 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>C60 Collaboration</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Коллаборация с Фуллереном C60</title>
+  <meta name="description" content="Премиальная русскоязычная landing page о коллаборации с фуллереном C60 в светлой стилистике, ориентированной на инвесторов и партнёров." />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FFF9F1',
+            sand: '#F5E8D4',
+            gold: '#D8A64F',
+            goldDeep: '#B9852F',
+            brown: '#5A4020',
+            olive: '#7E8B53',
+            ink: '#1E1B16'
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(74, 49, 12, 0.08)',
+            card: '0 18px 60px rgba(97, 67, 21, 0.10)',
+            glow: '0 0 0 1px rgba(216,166,79,0.18), 0 16px 45px rgba(216,166,79,0.16)'
+          },
+          backgroundImage: {
+            hero: 'radial-gradient(circle at top left, rgba(216,166,79,0.30), transparent 32%), radial-gradient(circle at top right, rgba(126,139,83,0.18), transparent 28%), linear-gradient(180deg, #FFFDF8 0%, #FFF6E8 100%)',
+            goldline: 'linear-gradient(90deg, rgba(216,166,79,0), rgba(216,166,79,0.9), rgba(216,166,79,0))'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .glass {
+      background: rgba(255,255,255,0.72);
+      backdrop-filter: blur(14px);
+    }
+  </style>
 </head>
-
-<body class="bg-black text-white font-sans">
-
-<!-- HERO -->
-<section class="max-w-6xl mx-auto px-6 py-24 text-center">
-  <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-    C60 — Next Generation Longevity Platform
-  </h1>
-  <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
-    We build a scalable ecosystem around advanced antioxidant technology
-    targeting the global longevity market.
-  </p>
-  <button class="bg-white text-black px-8 py-4 rounded-xl font-semibold hover:scale-105 transition">
-    Request Investor Deck
-  </button>
-</section>
-
-<!-- PROBLEM -->
-<section class="bg-white text-black py-20">
-  <div class="max-w-5xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-6">The Problem</h2>
-    <p class="text-lg text-gray-700">
-      Aging is driven by oxidative stress. Existing solutions are fragmented,
-      ineffective, and lack scalability.
-    </p>
-  </div>
-</section>
-
-<!-- SOLUTION -->
-<section class="py-20">
-  <div class="max-w-5xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-6">Our Solution</h2>
-    <p class="text-gray-300">
-      C60 is a powerful antioxidant platform with potential to redefine
-      longevity and cellular health.
-    </p>
-  </div>
-</section>
-
-<!-- PRODUCT -->
-<section class="bg-gray-900 py-20">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-    <div class="bg-black p-6 rounded-2xl">
-      <h3 class="text-xl font-semibold mb-3">Product</h3>
-      <p class="text-gray-400">Consumer-ready longevity solutions</p>
+<body class="bg-cream text-ink antialiased">
+  <header class="sticky top-0 z-50 border-b border-white/60 bg-white/80 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+      <a href="#top" class="flex items-center gap-3">
+        <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-gold to-goldDeep text-sm font-extrabold text-white shadow-glow">C60</div>
+        <div>
+          <div class="text-sm font-semibold uppercase tracking-[0.22em] text-goldDeep">Full Energy Style</div>
+          <div class="text-base font-semibold text-ink">Коллаборация с Фуллереном C60</div>
+        </div>
+      </a>
+      <nav class="hidden items-center gap-8 text-sm font-medium text-stone-700 lg:flex">
+        <a href="#about" class="transition hover:text-goldDeep">О проекте</a>
+        <a href="#advantages" class="transition hover:text-goldDeep">Преимущества</a>
+        <a href="#format" class="transition hover:text-goldDeep">Формат</a>
+        <a href="#cases" class="transition hover:text-goldDeep">Потенциал</a>
+        <a href="#contact" class="transition hover:text-goldDeep">Контакты</a>
+      </nav>
+      <a href="#contact" class="rounded-full bg-gradient-to-r from-gold to-goldDeep px-5 py-3 text-sm font-semibold text-white shadow-soft transition hover:-translate-y-0.5">Связаться</a>
     </div>
-    <div class="bg-black p-6 rounded-2xl">
-      <h3 class="text-xl font-semibold mb-3">Platform</h3>
-      <p class="text-gray-400">Ecosystem for partners and distribution</p>
+  </header>
+
+  <main id="top">
+    <section class="bg-hero">
+      <div class="mx-auto grid max-w-7xl items-center gap-16 px-6 py-16 lg:grid-cols-2 lg:px-8 lg:py-24">
+        <div>
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-white/75 px-4 py-2 text-sm font-medium text-brown shadow-soft">
+            <span class="inline-block h-2.5 w-2.5 rounded-full bg-gold"></span>
+            Премиальная инвестиционная подача на русском языке
+          </div>
+          <h1 class="max-w-3xl text-4xl font-bold leading-tight text-ink sm:text-5xl lg:text-6xl">
+            Коллаборация с <span class="text-goldDeep">Фуллереном C60</span> — проект в стиле Full Energy для партнёров, инвесторов и масштабирования
+          </h1>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-stone-700">
+            Светлая, дорогая и понятная посадочная страница: без мрачного фона, без ощущения MVP, с акцентом на доверие, продукт, перспективу рынка и деловую упаковку.
+          </p>
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a href="#contact" class="rounded-full bg-gradient-to-r from-gold to-goldDeep px-7 py-4 text-center text-base font-semibold text-white shadow-glow transition hover:-translate-y-0.5">Обсудить сотрудничество</a>
+            <a href="#about" class="rounded-full border border-gold/30 bg-white/85 px-7 py-4 text-center text-base font-semibold text-brown shadow-soft transition hover:bg-white">Смотреть структуру проекта</a>
+          </div>
+          <dl class="mt-10 grid gap-5 sm:grid-cols-3">
+            <div class="rounded-3xl border border-white/70 bg-white/75 p-5 shadow-soft">
+              <dt class="text-sm text-stone-500">Фокус</dt>
+              <dd class="mt-2 text-2xl font-bold text-ink">C60</dd>
+            </div>
+            <div class="rounded-3xl border border-white/70 bg-white/75 p-5 shadow-soft">
+              <dt class="text-sm text-stone-500">Стиль</dt>
+              <dd class="mt-2 text-2xl font-bold text-ink">Premium Light</dd>
+            </div>
+            <div class="rounded-3xl border border-white/70 bg-white/75 p-5 shadow-soft">
+              <dt class="text-sm text-stone-500">Цель</dt>
+              <dd class="mt-2 text-2xl font-bold text-ink">Инвесторы</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -left-6 top-12 hidden h-24 w-24 rounded-full bg-gold/20 blur-2xl lg:block"></div>
+          <div class="absolute -right-4 bottom-8 hidden h-28 w-28 rounded-full bg-olive/20 blur-2xl lg:block"></div>
+          <div class="relative overflow-hidden rounded-[32px] border border-white/70 bg-white/80 p-4 shadow-card">
+            <div class="overflow-hidden rounded-[28px] border border-sand bg-gradient-to-br from-[#FFF7EA] via-white to-[#FAF1E1] p-8">
+              <div class="mb-8 flex items-center justify-between">
+                <div>
+                  <div class="text-sm font-semibold uppercase tracking-[0.24em] text-goldDeep">Investor Preview</div>
+                  <div class="mt-2 text-2xl font-bold text-ink">Светлая бренд‑подача</div>
+                </div>
+                <div class="rounded-2xl border border-gold/20 bg-white px-4 py-2 text-sm font-semibold text-brown shadow-soft">RU</div>
+              </div>
+
+              <div class="grid gap-4">
+                <div class="rounded-3xl bg-white p-5 shadow-soft">
+                  <div class="text-sm text-stone-500">Ключевой посыл</div>
+                  <div class="mt-2 text-lg font-semibold text-ink">Добавить энергии в жизнь через понятную продуктовую экосистему</div>
+                </div>
+                <div class="grid gap-4 sm:grid-cols-2">
+                  <div class="rounded-3xl bg-[#FFFBF4] p-5 ring-1 ring-gold/15 shadow-soft">
+                    <div class="text-sm text-stone-500">Упаковка</div>
+                    <div class="mt-2 text-lg font-semibold text-ink">Лендинг под партнёров и инвестиционный диалог</div>
+                  </div>
+                  <div class="rounded-3xl bg-[#F8F7F0] p-5 ring-1 ring-olive/15 shadow-soft">
+                    <div class="text-sm text-stone-500">Тональность</div>
+                    <div class="mt-2 text-lg font-semibold text-ink">Чисто, тепло, экспертно, дорого</div>
+                  </div>
+                </div>
+                <div class="rounded-[28px] bg-gradient-to-r from-[#FAE4B5] via-[#FFF2D7] to-[#F7E7BF] p-6 shadow-soft">
+                  <div class="text-sm font-semibold uppercase tracking-[0.16em] text-brown">Value Block</div>
+                  <div class="mt-3 text-2xl font-bold leading-snug text-ink">Сайт должен продавать доверие ещё до первого звонка</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <div class="text-sm font-semibold uppercase tracking-[0.24em] text-goldDeep">О проекте</div>
+          <h2 class="mt-4 text-3xl font-bold tracking-tight text-ink sm:text-4xl">Позиционирование не как «просто сайта», а как инвестиционной оболочки продукта</h2>
+          <p class="mt-6 text-lg leading-8 text-stone-700">
+            Здесь важно не просто рассказать о молекуле. Нужно показать: рынок, экспертность, формат сотрудничества, потенциал масштабирования и визуальную зрелость бренда.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <article class="rounded-[30px] bg-white p-8 shadow-card ring-1 ring-black/5">
+            <div class="text-sm font-semibold uppercase tracking-[0.2em] text-goldDeep">01</div>
+            <h3 class="mt-4 text-2xl font-bold text-ink">Экспертная подача</h3>
+            <p class="mt-4 leading-7 text-stone-600">Не перегружаем научной терминологией на первом экране. Даём сильную, ясную и дорогую упаковку для делового диалога.</p>
+          </article>
+          <article class="rounded-[30px] bg-white p-8 shadow-card ring-1 ring-black/5">
+            <div class="text-sm font-semibold uppercase tracking-[0.2em] text-goldDeep">02</div>
+            <h3 class="mt-4 text-2xl font-bold text-ink">Светлая визуальная среда</h3>
+            <p class="mt-4 leading-7 text-stone-600">Тёплый светлый фон, золотые акценты, «воздух» в композиции и premium‑сетке создают ощущение зрелого бренда.</p>
+          </article>
+          <article class="rounded-[30px] bg-white p-8 shadow-card ring-1 ring-black/5">
+            <div class="text-sm font-semibold uppercase tracking-[0.2em] text-goldDeep">03</div>
+            <h3 class="mt-4 text-2xl font-bold text-ink">Партнёрская перспектива</h3>
+            <p class="mt-4 leading-7 text-stone-600">Показываем не только продукт, но и то, как вокруг него может строиться экосистема: дистрибуция, контент, экспертиза и капитализация бренда.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="advantages" class="py-24 bg-white">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div class="max-w-3xl">
+            <div class="text-sm font-semibold uppercase tracking-[0.24em] text-goldDeep">Преимущества подачи</div>
+            <h2 class="mt-4 text-3xl font-bold tracking-tight text-ink sm:text-4xl">Что делает сайт визуально премиальным</h2>
+          </div>
+          <div class="h-px w-full max-w-sm bg-goldline"></div>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-2">
+          <div class="rounded-[32px] bg-[#FFF9EF] p-8 shadow-soft ring-1 ring-gold/15">
+            <h3 class="text-2xl font-bold text-ink">Визуальная дисциплина</h3>
+            <ul class="mt-6 space-y-4 text-stone-700">
+              <li>— единая сетка и одинаковые внешние поля</li>
+              <li>— крупные заголовки без визуального шума</li>
+              <li>— ровные карточки и мягкие тени</li>
+              <li>— светлый, «живой» фон вместо глухого чёрного</li>
+            </ul>
+          </div>
+          <div class="rounded-[32px] bg-[#F7F8F2] p-8 shadow-soft ring-1 ring-olive/15">
+            <h3 class="text-2xl font-bold text-ink">Инвесторская логика</h3>
+            <ul class="mt-6 space-y-4 text-stone-700">
+              <li>— сильный оффер на первом экране</li>
+              <li>— блок о рынке и направлении роста</li>
+              <li>— понятный формат сотрудничества</li>
+              <li>— финальный CTA без лишних отвлечений</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="format" class="py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+          <div class="rounded-[34px] bg-white p-10 shadow-card ring-1 ring-black/5">
+            <div class="text-sm font-semibold uppercase tracking-[0.24em] text-goldDeep">Формат сотрудничества</div>
+            <h2 class="mt-4 text-3xl font-bold text-ink">Коллаборация, в которую легко зайти и легко масштабировать</h2>
+            <div class="mt-8 grid gap-6 sm:grid-cols-2">
+              <div class="rounded-3xl border border-sand bg-[#FFFCF7] p-6">
+                <div class="text-sm text-stone-500">Продуктовый контур</div>
+                <div class="mt-2 text-xl font-semibold text-ink">Линейка решений на базе C60</div>
+              </div>
+              <div class="rounded-3xl border border-sand bg-[#FFFCF7] p-6">
+                <div class="text-sm text-stone-500">Контентный контур</div>
+                <div class="mt-2 text-xl font-semibold text-ink">Образовательная и имиджевая упаковка</div>
+              </div>
+              <div class="rounded-3xl border border-sand bg-[#FFFCF7] p-6">
+                <div class="text-sm text-stone-500">Партнёрский контур</div>
+                <div class="mt-2 text-xl font-semibold text-ink">Вход для инвесторов и коллабораторов</div>
+              </div>
+              <div class="rounded-3xl border border-sand bg-[#FFFCF7] p-6">
+                <div class="text-sm text-stone-500">Масштабирование</div>
+                <div class="mt-2 text-xl font-semibold text-ink">От сайта к экосистеме бренда</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-[34px] bg-gradient-to-br from-[#FAE7BA] via-[#FFF4DB] to-[#F4E4BF] p-10 shadow-card">
+            <div class="glass rounded-[28px] border border-white/80 p-8 shadow-soft">
+              <div class="text-sm font-semibold uppercase tracking-[0.22em] text-brown">Почему это работает</div>
+              <p class="mt-5 text-lg leading-8 text-stone-700">
+                Когда сайт выглядит чисто, светло и убедительно, он перестаёт быть просто страницей. Он начинает работать как фильтр доверия и как первый слой продаж.
+              </p>
+              <div class="mt-8 grid gap-4">
+                <div class="rounded-2xl bg-white/90 p-4 text-sm font-medium text-stone-700 shadow-soft">Премиальное первое впечатление</div>
+                <div class="rounded-2xl bg-white/90 p-4 text-sm font-medium text-stone-700 shadow-soft">Понятная структура для делового разговора</div>
+                <div class="rounded-2xl bg-white/90 p-4 text-sm font-medium text-stone-700 shadow-soft">Лёгкий апгрейд под реальные материалы компании</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cases" class="bg-white py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <div class="text-sm font-semibold uppercase tracking-[0.24em] text-goldDeep">Потенциал</div>
+          <h2 class="mt-4 text-3xl font-bold tracking-tight text-ink sm:text-4xl">Что можно добавить на следующем этапе</h2>
+        </div>
+        <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div class="rounded-[28px] bg-[#FFF9EF] p-7 shadow-soft ring-1 ring-gold/15">
+            <h3 class="text-xl font-bold text-ink">Реальные продукты</h3>
+            <p class="mt-3 leading-7 text-stone-600">Карточки линейки, упаковка, преимущества, ссылки на каталоги и материалы.</p>
+          </div>
+          <div class="rounded-[28px] bg-[#F7F8F2] p-7 shadow-soft ring-1 ring-olive/15">
+            <h3 class="text-xl font-bold text-ink">Цифры и трекшн</h3>
+            <p class="mt-3 leading-7 text-stone-600">Динамика направления, партнёрская база, география, метрики интереса и роста.</p>
+          </div>
+          <div class="rounded-[28px] bg-[#FFF9EF] p-7 shadow-soft ring-1 ring-gold/15">
+            <h3 class="text-xl font-bold text-ink">Видео и медиа</h3>
+            <p class="mt-3 leading-7 text-stone-600">Встроенные ролики, интервью, объясняющие блоки и визуальные презентации проекта.</p>
+          </div>
+          <div class="rounded-[28px] bg-[#F7F8F2] p-7 shadow-soft ring-1 ring-olive/15">
+            <h3 class="text-xl font-bold text-ink">Investor section</h3>
+            <p class="mt-3 leading-7 text-stone-600">Отдельный блок под документы, презентации, deck, pipeline и форму для контакта.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-24">
+      <div class="mx-auto max-w-5xl px-6 lg:px-8">
+        <div class="overflow-hidden rounded-[36px] bg-gradient-to-r from-[#F7E2B0] via-[#FFF1D2] to-[#E9EBCF] p-[1px] shadow-card">
+          <div class="rounded-[35px] bg-white px-8 py-12 sm:px-12 sm:py-14">
+            <div class="mx-auto max-w-3xl text-center">
+              <div class="text-sm font-semibold uppercase tracking-[0.24em] text-goldDeep">Контактный блок</div>
+              <h2 class="mt-4 text-3xl font-bold text-ink sm:text-4xl">Готовы обсудить партнёрство, инвестирование или развитие сайта дальше</h2>
+              <p class="mt-5 text-lg leading-8 text-stone-700">
+                Здесь можно поставить Telegram, e-mail, ссылку на презентацию, форму заявки или кнопку перехода в личный кабинет / чат.
+              </p>
+              <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+                <a href="mailto:info@example.com" class="rounded-full bg-gradient-to-r from-gold to-goldDeep px-8 py-4 text-base font-semibold text-white shadow-glow transition hover:-translate-y-0.5">Написать на e-mail</a>
+                <a href="https://t.me/your_username" class="rounded-full border border-gold/30 bg-[#FFF9EF] px-8 py-4 text-base font-semibold text-brown shadow-soft transition hover:bg-white">Открыть Telegram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-gold/10 bg-white/80">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-stone-500 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      <div>© 2026 Коллаборация с Фуллереном C60</div>
+      <div>Светлый premium‑лендинг в деловой стилистике</div>
     </div>
-    <div class="bg-black p-6 rounded-2xl">
-      <h3 class="text-xl font-semibold mb-3">Data</h3>
-      <p class="text-gray-400">Research and analytics layer</p>
-    </div>
-  </div>
-</section>
-
-<!-- MARKET -->
-<section class="py-20 text-center">
-  <h2 class="text-3xl font-bold mb-6">Market Opportunity</h2>
-  <p class="text-gray-300">Global longevity market is growing rapidly</p>
-</section>
-
-<!-- CTA -->
-<section class="bg-white text-black py-20 text-center">
-  <h2 class="text-3xl font-bold mb-6">Join the Future</h2>
-  <button class="bg-black text-white px-8 py-4 rounded-xl font-semibold">
-    Contact Us
-  </button>
-</section>
-
+  </footer>
 </body>
 </html>
