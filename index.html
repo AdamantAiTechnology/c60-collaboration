@@ -1,134 +1,432 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wellness Brand Scaling</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Усиление wellness-брендов и продуктов</title>
+  <meta name="description" content="Премиальная посадочная страница для предложения услуг по усилению брендов БАД, wellness, коучинга, ретритов, йога-студий и трансформационных практик." />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FBF7F2',
+            warm: '#FFF3E8',
+            peach: '#FFE1C6',
+            orange: '#F57C1F',
+            orangeDeep: '#DB5E00',
+            lilac: '#B38CFF',
+            lilacSoft: '#EDE2FF',
+            ink: '#1B1714',
+            muted: '#6C6258',
+            line: '#E8DCCD'
+          },
+          boxShadow: {
+            soft: '0 12px 30px rgba(136, 75, 8, 0.08)',
+            card: '0 18px 55px rgba(88, 46, 0, 0.10)',
+            glow: '0 10px 35px rgba(245,124,31,0.20)',
+            lilac: '0 12px 40px rgba(179,140,255,0.16)'
+          },
+          backgroundImage: {
+            hero: 'radial-gradient(circle at top left, rgba(245,124,31,0.22), transparent 34%), radial-gradient(circle at top right, rgba(179,140,255,0.18), transparent 30%), linear-gradient(180deg, #FFFDFB 0%, #FFF4E8 100%)',
+            accent: 'linear-gradient(135deg, #F57C1F 0%, #FF9A3D 48%, #B38CFF 100%)',
+            cardwarm: 'linear-gradient(135deg, #FFF7EF 0%, #FFFFFF 55%, #F3EBFF 100%)'
+          }
+        }
+      }
+    }
+  </script>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #FBF7F2;
+      color: #1B1714;
+    }
+    .glass {
+      background: rgba(255,255,255,0.76);
+      backdrop-filter: blur(14px);
+    }
   </style>
 </head>
-<body class="bg-white text-gray-900">
-
-<!-- HERO -->
-<section class="px-6 py-20 max-w-6xl mx-auto">
-  <h1 class="text-5xl font-bold leading-tight">
-    Усиливаем бренды в wellness, БАД и трансформации
-  </h1>
-  <p class="mt-6 text-xl text-gray-600 max-w-2xl">
-    Превращаем продукт в премиальный опыт, который увеличивает ценность, чек и лояльность клиентов
-  </p>
-  <div class="mt-8 flex gap-4">
-    <button class="bg-orange-500 text-white px-6 py-3 rounded-xl text-lg">Обсудить сотрудничество</button>
-    <button class="border border-gray-300 px-6 py-3 rounded-xl text-lg">Как это работает</button>
-  </div>
-</section>
-
-<!-- PROBLEM -->
-<section class="bg-orange-50 py-16 px-6">
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-3xl font-semibold mb-6">Почему бренды не растут</h2>
-    <p class="text-lg text-gray-700">
-      Вы продаёте продукт. Но рынок покупает состояние.
-    </p>
-  </div>
-</section>
-
-<!-- SOLUTION -->
-<section class="py-16 px-6 max-w-6xl mx-auto">
-  <h2 class="text-3xl font-semibold mb-8">Что мы делаем</h2>
-  <div class="grid md:grid-cols-3 gap-6">
-    <div class="p-6 border rounded-2xl shadow hover:scale-105 transition">
-      Трансформационные протоколы
+<body class="antialiased">
+  <header class="sticky top-0 z-50 border-b border-white/60 bg-white/80 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+      <a href="#top" class="flex items-center gap-3">
+        <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-accent text-sm font-extrabold text-white shadow-glow">WE</div>
+        <div>
+          <div class="text-sm font-semibold uppercase tracking-[0.22em] text-orange">Brand Elevation</div>
+          <div class="text-base font-semibold text-ink">Усиление wellness-брендов</div>
+        </div>
+      </a>
+      <nav class="hidden items-center gap-8 text-sm font-medium text-muted lg:flex">
+        <a href="#problem" class="transition hover:text-orange">Проблема</a>
+        <a href="#solution" class="transition hover:text-orange">Решение</a>
+        <a href="#services" class="transition hover:text-orange">Что получаете</a>
+        <a href="#pricing" class="transition hover:text-orange">Пакеты</a>
+        <a href="#contact" class="transition hover:text-orange">Контакты</a>
+      </nav>
+      <a href="#contact" class="rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5">Обсудить</a>
     </div>
-    <div class="p-6 border rounded-2xl shadow hover:scale-105 transition">
-      Контент и воронки
-    </div>
-    <div class="p-6 border rounded-2xl shadow hover:scale-105 transition">
-      Бренд-упаковка
-    </div>
-  </div>
-</section>
+  </header>
 
-<!-- START OFFER -->
-<section class="bg-white py-20 px-6">
-  <div class="max-w-4xl mx-auto border-2 border-orange-500 rounded-3xl p-10 text-center">
-    <p class="text-orange-500 uppercase text-sm">Limited Offer</p>
-    <h2 class="text-4xl font-bold mt-4">Стартовое предложение</h2>
-    <p class="mt-4 text-gray-600">Специальные условия для первых 5 партнёров</p>
+  <main id="top">
+    <section class="bg-hero">
+      <div class="mx-auto grid max-w-7xl items-center gap-16 px-6 py-16 lg:grid-cols-2 lg:px-8 lg:py-24">
+        <div>
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-orange/20 bg-white/80 px-4 py-2 text-sm font-medium text-orange shadow-soft">
+            <span class="inline-block h-2.5 w-2.5 rounded-full bg-orange"></span>
+            Для брендов БАД, wellness, коучинга, йоги, ретритов и трансформационных практик
+          </div>
 
-    <div class="mt-8 text-3xl font-bold text-orange-500">
-      $1,000 – $2,000
-    </div>
-    <p class="text-gray-500">Инвестиция в MVP</p>
+          <h1 class="max-w-4xl text-4xl font-bold leading-tight text-ink sm:text-5xl lg:text-6xl">
+            Усиливаем бренды в <span class="text-orange">wellness, БАД и трансформации</span>
+          </h1>
 
-    <div class="grid md:grid-cols-2 gap-4 mt-8 text-left">
-      <div>✓ 1 аудиоритуал (7–10 мин)</div>
-      <div>✓ 3 Short Hooks (Reels)</div>
-      <div>✓ Концепт лендинга</div>
-      <div>✓ Brand Positioning Doc</div>
-    </div>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-muted">
+            Мы превращаем ваш продукт в премиальный опыт, который повышает ценность, средний чек и лояльность клиентов. Не просто добавка. Не просто курс. Не просто практика. А система трансформации, которую люди проживают.
+          </p>
 
-    <p class="mt-8 text-orange-500">Ограничено: только 5 мест</p>
-  </div>
-</section>
+          <p class="mt-5 max-w-2xl text-base leading-7 text-muted">
+            Подходит для брендов нутрицевтики и биохакинга, коучей, терапевтов, йога-студий, авторов программ, ретритов и компаний, которым нужна более сильная упаковка продукта, оффера и клиентского пути.
+          </p>
 
-<!-- PRICING -->
-<section class="bg-gray-50 py-20 px-6">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-4xl font-bold mb-12">Пакеты и цены</h2>
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a href="#contact" class="rounded-full bg-accent px-7 py-4 text-center text-base font-semibold text-white shadow-glow transition hover:-translate-y-0.5">Обсудить сотрудничество</a>
+            <a href="#solution" class="rounded-full border border-orange/20 bg-white/85 px-7 py-4 text-center text-base font-semibold text-orange shadow-soft transition hover:bg-white">Смотреть, как это работает</a>
+          </div>
 
-    <div class="grid md:grid-cols-3 gap-8">
+          <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="rounded-3xl border border-white/80 bg-white/85 p-5 shadow-soft">
+              <div class="text-sm text-stone-500">Фокус</div>
+              <div class="mt-2 text-lg font-semibold text-ink">Ценность продукта</div>
+            </div>
+            <div class="rounded-3xl border border-white/80 bg-white/85 p-5 shadow-soft">
+              <div class="text-sm text-stone-500">Цель</div>
+              <div class="mt-2 text-lg font-semibold text-ink">Рост среднего чека и LTV</div>
+            </div>
+            <div class="rounded-3xl border border-white/80 bg-white/85 p-5 shadow-soft sm:col-span-2 lg:col-span-1">
+              <div class="text-sm text-stone-500">Модель</div>
+              <div class="mt-2 text-lg font-semibold text-ink">Контент + оффер + воронка + мифология бренда</div>
+            </div>
+          </div>
+        </div>
 
-      <div class="p-8 bg-white rounded-2xl shadow">
-        <h3 class="text-xl font-semibold">Пилотный спринт</h3>
-        <p class="text-3xl text-orange-500 mt-4">$5,000</p>
-        <ul class="mt-6 space-y-2 text-gray-600">
-          <li>1 аудиоритуал</li>
-          <li>5 short hooks</li>
-          <li>VSL концепт</li>
-          <li>Mini brand myth</li>
-        </ul>
+        <div class="relative">
+          <div class="absolute -left-6 top-10 hidden h-24 w-24 rounded-full bg-orange/20 blur-2xl lg:block"></div>
+          <div class="absolute -right-4 bottom-8 hidden h-28 w-28 rounded-full bg-lilac/30 blur-2xl lg:block"></div>
+          <div class="relative overflow-hidden rounded-[34px] border border-white/80 bg-white/80 p-4 shadow-card">
+            <div class="overflow-hidden rounded-[28px] border border-orange/15 bg-cardwarm p-8">
+              <div class="mb-8 flex items-center justify-between">
+                <div>
+                  <div class="text-sm font-semibold uppercase tracking-[0.24em] text-orange">Value Preview</div>
+                  <div class="mt-2 text-2xl font-bold text-ink">Система усиления продукта</div>
+                </div>
+                <div class="rounded-2xl bg-accent px-4 py-2 text-sm font-semibold text-white shadow-glow">Premium</div>
+              </div>
+
+              <div class="grid gap-4">
+                <div class="rounded-3xl bg-white p-5 shadow-soft">
+                  <div class="text-sm text-stone-500">Что меняется</div>
+                  <div class="mt-2 text-lg font-semibold text-ink">Вы продаёте не просто товар или услугу, а проживаемый трансформационный опыт</div>
+                </div>
+                <div class="grid gap-4 sm:grid-cols-2">
+                  <div class="rounded-3xl bg-warm p-5 ring-1 ring-orange/15 shadow-soft">
+                    <div class="text-sm text-stone-500">Для бренда</div>
+                    <div class="mt-2 text-lg font-semibold text-ink">Более сильное позиционирование и рост perceived value</div>
+                  </div>
+                  <div class="rounded-3xl bg-lilacSoft p-5 ring-1 ring-lilac/18 shadow-lilac">
+                    <div class="text-sm text-stone-500">Для рынка</div>
+                    <div class="mt-2 text-lg font-semibold text-ink">Выход в аудиторию wellness, коучинга и трансформаций</div>
+                  </div>
+                </div>
+                <div class="rounded-[28px] bg-accent p-6 text-white shadow-glow">
+                  <div class="text-sm font-semibold uppercase tracking-[0.16em] text-white/80">Ключевой принцип</div>
+                  <div class="mt-3 text-2xl font-bold leading-snug">Вы продаёте не продукт. Вы продаёте состояние, историю и ритуал.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="p-10 bg-white rounded-2xl shadow-lg border-2 border-orange-500 scale-105">
-        <h3 class="text-xl font-semibold">Signature Launch</h3>
-        <p class="text-4xl text-orange-500 mt-4">$25,000</p>
-        <ul class="mt-6 space-y-2 text-gray-700">
-          <li>2–3 аудиоритуала</li>
-          <li>15–20 short hooks</li>
-          <li>VSL + лендинг</li>
-          <li>Email воронка</li>
-          <li>Messaging pillars</li>
-        </ul>
+    <section id="problem" class="py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <div class="text-sm font-semibold uppercase tracking-[0.24em] text-orange">Проблема</div>
+          <h2 class="mt-4 text-3xl font-bold tracking-tight text-ink sm:text-4xl">Почему большинство сильных продуктов не растёт так быстро, как могло бы</h2>
+          <p class="mt-6 text-lg leading-8 text-muted">
+            Ваш продукт может быть качественным. Но клиент не чувствует трансформацию. Он покупает добавку, курс или практику, но не получает опыт, с которым можно эмоционально соединиться. В итоге бренд остаётся в логике «ещё один хороший продукт», а не становится категорией, которую хочется выбрать и рекомендовать.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <article class="rounded-[30px] bg-white p-8 shadow-card ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-glow">
+            <div class="text-sm font-semibold uppercase tracking-[0.2em] text-orange">01</div>
+            <h3 class="mt-4 text-2xl font-bold text-ink">Низкая эмоциональная связь</h3>
+            <p class="mt-4 leading-7 text-muted">Клиент видит состав, свойства и обещание результата, но не чувствует смысла, истории и ритуала вокруг продукта.</p>
+          </article>
+          <article class="rounded-[30px] bg-white p-8 shadow-card ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-glow">
+            <div class="text-sm font-semibold uppercase tracking-[0.2em] text-orange">02</div>
+            <h3 class="mt-4 text-2xl font-bold text-ink">Ограничение по среднему чеку</h3>
+            <p class="mt-4 leading-7 text-muted">Когда продаётся только продукт, без системы и пути изменений, бренду сложнее поднимать цену и создавать премиальные пакеты.</p>
+          </article>
+          <article class="rounded-[30px] bg-white p-8 shadow-card ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-glow">
+            <div class="text-sm font-semibold uppercase tracking-[0.2em] text-orange">03</div>
+            <h3 class="mt-4 text-2xl font-bold text-ink">Слабая повторная ценность</h3>
+            <p class="mt-4 leading-7 text-muted">Если клиент не проживает ваш продукт как опыт, он легко переключается на конкурентов с похожим обещанием и похожим составом.</p>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="p-8 bg-white rounded-2xl shadow">
-        <h3 class="text-xl font-semibold">Flagship / License</h3>
-        <p class="text-3xl text-orange-500 mt-4">$50,000+</p>
-        <ul class="mt-6 space-y-2 text-gray-600">
-          <li>Полная система под ключ</li>
-          <li>Go-to-market стратегия</li>
-          <li>Обучение команды</li>
-          <li>Лицензия / партнёрство</li>
-        </ul>
+    <section id="solution" class="bg-white py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div class="max-w-3xl">
+            <div class="text-sm font-semibold uppercase tracking-[0.24em] text-orange">Решение</div>
+            <h2 class="mt-4 text-3xl font-bold tracking-tight text-ink sm:text-4xl">Мы создаём трансформационную оболочку вокруг вашего продукта</h2>
+            <p class="mt-6 text-lg leading-8 text-muted">
+              Соединяем науку, биохакинг, работу с подсознанием, сторителлинг, ритуалы и продающую упаковку. В результате ваш продукт становится системой, которую человек проживает, а не просто потребляет.
+            </p>
+          </div>
+          <div class="h-1 w-full max-w-sm rounded-full bg-accent opacity-70"></div>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-2">
+          <div class="rounded-[32px] bg-warm p-8 shadow-soft ring-1 ring-orange/15">
+            <h3 class="text-2xl font-bold text-ink">Что меняется для бренда</h3>
+            <ul class="mt-6 space-y-4 text-muted">
+              <li>— продукт становится премиальным опытом</li>
+              <li>— появляется эмоциональный слой и бренд-мифология</li>
+              <li>— растёт воспринимаемая ценность и чек</li>
+              <li>— усиливается контент, оффер и воронка</li>
+            </ul>
+          </div>
+          <div class="rounded-[32px] bg-lilacSoft p-8 shadow-lilac ring-1 ring-lilac/20">
+            <h3 class="text-2xl font-bold text-ink">Что меняется для клиента</h3>
+            <ul class="mt-6 space-y-4 text-muted">
+              <li>— он получает не просто покупку, а путь изменений</li>
+              <li>— воспринимает продукт как ритуал и систему</li>
+              <li>— возвращается за продолжением опыта</li>
+              <li>— начинает рекомендовать бренд как часть своей истории</li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </section>
 
+    <section id="services" class="py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+          <div class="rounded-[34px] bg-white p-10 shadow-card ring-1 ring-black/5">
+            <div class="text-sm font-semibold uppercase tracking-[0.24em] text-orange">Что вы получаете</div>
+            <h2 class="mt-4 text-3xl font-bold text-ink">Полный набор для усиления продукта и запуска нового уровня восприятия бренда</h2>
+            <p class="mt-5 text-base leading-7 text-muted">
+              Мы не ограничиваемся одним роликом или одним текстом. Мы собираем вокруг вашего продукта понятную премиальную систему: смысл, упаковку, контент, воронку и элементы повторных продаж.
+            </p>
+            <div class="mt-8 grid gap-6 sm:grid-cols-2">
+              <div class="rounded-3xl border border-line bg-[#FFFCF8] p-6">
+                <div class="text-sm text-stone-500">01</div>
+                <div class="mt-2 text-xl font-semibold text-ink">Трансформационный протокол</div>
+                <p class="mt-3 text-sm leading-6 text-muted">7-дневный или расширенный путь, в который интегрируется ваш продукт, практика или программа.</p>
+              </div>
+              <div class="rounded-3xl border border-line bg-[#FFFCF8] p-6">
+                <div class="text-sm text-stone-500">02</div>
+                <div class="mt-2 text-xl font-semibold text-ink">Аудио и видео ритуалы</div>
+                <p class="mt-3 text-sm leading-6 text-muted">Медитации, гипнотические сессии, визуализации и сценарии проживания продукта.</p>
+              </div>
+              <div class="rounded-3xl border border-line bg-[#FFFCF8] p-6">
+                <div class="text-sm text-stone-500">03</div>
+                <div class="mt-2 text-xl font-semibold text-ink">Контент для запуска</div>
+                <p class="mt-3 text-sm leading-6 text-muted">Hook-ролики, Reels, Shorts, флагманское видео, VSL, письма и тексты для воронки.</p>
+              </div>
+              <div class="rounded-3xl border border-line bg-[#FFFCF8] p-6">
+                <div class="text-sm text-stone-500">04</div>
+                <div class="mt-2 text-xl font-semibold text-ink">Бренд-мифология</div>
+                <p class="mt-3 text-sm leading-6 text-muted">Эмоциональный и символический слой, который делает продукт запоминающимся и труднокопируемым.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-[34px] bg-accent p-10 text-white shadow-glow">
+            <div class="glass rounded-[28px] border border-white/20 p-8 shadow-soft">
+              <div class="text-sm font-semibold uppercase tracking-[0.22em] text-orange">Результат для бизнеса</div>
+              <p class="mt-5 text-lg leading-8 text-muted">
+                Вы получаете не просто красивую упаковку, а систему, которая повышает воспринимаемую ценность продукта, усиливает средний чек и открывает выход в новые аудитории.
+              </p>
+              <div class="mt-8 grid gap-4">
+                <div class="rounded-2xl bg-white p-4 text-sm font-medium text-muted shadow-soft">Рост среднего чека за счёт премиальной системы вокруг продукта</div>
+                <div class="rounded-2xl bg-white p-4 text-sm font-medium text-muted shadow-soft">Новые сегменты аудитории: wellness, студии, коучи, ретриты</div>
+                <div class="rounded-2xl bg-white p-4 text-sm font-medium text-muted shadow-soft">Рост LTV через повторные программы, подписки и сообщество</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="starter" class="bg-white py-24">
+      <div class="mx-auto max-w-6xl px-6 lg:px-8">
+        <div class="mb-8">
+          <div class="text-sm font-semibold uppercase tracking-[0.24em] text-orange">Стартовое предложение</div>
+          <h2 class="mt-4 text-3xl font-bold text-ink sm:text-5xl">Специальные условия для первых 5 партнёров</h2>
+          <p class="mt-4 max-w-3xl text-lg leading-8 text-muted">Стартовый инвестиционный вход для быстрого MVP и теста гипотезы. Подходит тем, кто хочет зайти в работу аккуратно, быстро и с понятным первым объёмом.</p>
+        </div>
+
+        <div class="relative overflow-hidden rounded-[36px] border-2 border-orange bg-cardwarm p-8 shadow-card sm:p-12">
+          <div class="mb-6 inline-flex rounded-full bg-orange/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-orange">Limited Offer • 2026</div>
+          <div class="grid items-start gap-8 lg:grid-cols-[1fr_auto]">
+            <div>
+              <div class="text-4xl font-bold text-orange sm:text-5xl">$1,000 – $2,000</div>
+              <div class="mt-2 text-base italic text-muted">Инвестиция в первый MVP</div>
+            </div>
+            <div class="hidden h-16 w-16 rounded-2xl bg-accent shadow-glow lg:block"></div>
+          </div>
+
+          <div class="mt-10 grid gap-5 sm:grid-cols-2">
+            <div class="rounded-2xl bg-white p-5 shadow-soft">✓ 1 аудиоритуал (7–10 мин)</div>
+            <div class="rounded-2xl bg-white p-5 shadow-soft">✓ 3 Short Hooks (Reels)</div>
+            <div class="rounded-2xl bg-white p-5 shadow-soft">✓ Концепт лендинга</div>
+            <div class="rounded-2xl bg-white p-5 shadow-soft">✓ Brand Positioning Doc</div>
+          </div>
+
+          <div class="mt-10 border-t border-orange/15 pt-6 text-lg text-ink">
+            ⚠ Ограниченное предложение — только <span class="font-semibold text-orange">5 мест</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="max-w-4xl">
+          <div class="text-sm font-semibold uppercase tracking-[0.24em] text-orange">Инвестиционное предложение</div>
+          <h2 class="mt-4 text-3xl font-bold text-ink sm:text-5xl">Пакеты & цены</h2>
+          <p class="mt-5 text-lg leading-8 text-muted">Ниже базовая сетка пакетов. Её можно адаптировать под конкретный бренд, нишу, KPI партнёра и глубину запуска.</p>
+        </div>
+
+        <div class="mt-12 grid gap-8 lg:grid-cols-3">
+          <article class="rounded-[30px] border border-line bg-white p-8 shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-glow">
+            <div class="text-sm uppercase tracking-[0.2em] text-stone-400">Starter</div>
+            <h3 class="mt-3 text-2xl font-semibold text-ink">Пилотный Спринт</h3>
+            <div class="mt-5 flex items-end gap-3">
+              <div class="text-5xl font-bold text-orange">$5,000</div>
+              <div class="pb-2 text-lg text-muted">/ 72 часа</div>
+            </div>
+            <div class="mt-6 h-px bg-line"></div>
+            <ul class="mt-6 space-y-3 text-base text-muted">
+              <li>• 1 аудиоритуал (10–15 мин)</li>
+              <li>• 5 Short Hooks (Reels/TikTok)</li>
+              <li>• Концепт VSL для лендинга</li>
+              <li>• Мини Brand-Myth документ</li>
+              <li>• 1 итерация правок</li>
+            </ul>
+            <p class="mt-8 italic text-stone-400">Быстрый старт для теста гипотезы</p>
+          </article>
+
+          <article class="relative rounded-[30px] border-2 border-orange bg-[#FFF9F3] p-8 shadow-glow transition duration-300 hover:-translate-y-1">
+            <div class="absolute -top-4 left-8 rounded-full bg-orange px-4 py-2 text-sm font-semibold uppercase tracking-[0.12em] text-white">Рекомендуемый</div>
+            <div class="text-sm uppercase tracking-[0.2em] text-stone-400">Growth</div>
+            <h3 class="mt-3 text-2xl font-semibold text-ink">Signature Launch</h3>
+            <div class="mt-5 flex items-end gap-3">
+              <div class="text-5xl font-bold text-orange">$25,000</div>
+              <div class="pb-2 text-lg text-muted">/ 10–14 дней</div>
+            </div>
+            <div class="mt-6 h-px bg-orange/20"></div>
+            <ul class="mt-6 space-y-3 text-base text-muted">
+              <li>• 2–3 аудиоритуала (серия)</li>
+              <li>• 15–20 Short Hooks + сценарии</li>
+              <li>• Полный VSL + прототип лендинга</li>
+              <li>• Email-цепочка (5 писем)</li>
+              <li>• 8–10 Messaging Pillars</li>
+              <li>• 2 итерации правок</li>
+            </ul>
+            <p class="mt-8 italic text-stone-400">Оптимальный запуск для сильного оффера и первой воронки</p>
+          </article>
+
+          <article class="rounded-[30px] border border-line bg-white p-8 shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-lilac">
+            <div class="text-sm uppercase tracking-[0.2em] text-stone-400">Enterprise</div>
+            <h3 class="mt-3 text-2xl font-semibold text-ink">Flagship / License</h3>
+            <div class="mt-5 flex items-end gap-3">
+              <div class="text-5xl font-bold text-orange">$50,000+</div>
+              <div class="pb-2 text-lg text-muted">/ 3–6 недель</div>
+            </div>
+            <div class="mt-6 h-px bg-line"></div>
+            <ul class="mt-6 space-y-3 text-base text-muted">
+              <li>• Полная контент-система под ключ</li>
+              <li>• Упаковка физического комплекта</li>
+              <li>• Партнёрский Go-to-Market план</li>
+              <li>• Обучение команды продаж</li>
+              <li>• Опция эксклюзивной лицензии</li>
+              <li>• Роялти (обсуждается)</li>
+            </ul>
+            <p class="mt-8 italic text-stone-400">Стратегическое партнёрство</p>
+          </article>
+        </div>
+
+        <p class="mt-8 text-sm text-stone-400">* Цены указаны как базовый ориентир и могут адаптироваться под конкретные KPI партнёра, масштаб запуска и состав deliverables. Мы не даём медицинских обещаний — фокус на клиентском опыте, упаковке и perceived value.</p>
+      </div>
+    </section>
+
+    <section id="audience" class="bg-white py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="grid gap-8 lg:grid-cols-2">
+          <div class="rounded-[34px] bg-warm p-10 shadow-soft ring-1 ring-orange/12">
+            <div class="text-sm font-semibold uppercase tracking-[0.24em] text-orange">Для кого</div>
+            <h2 class="mt-4 text-3xl font-bold text-ink">С кем мы работаем</h2>
+            <ul class="mt-8 space-y-4 text-lg text-muted">
+              <li>— бренды БАД, нутрицевтики и биохакинга</li>
+              <li>— wellness-центры и йога-студии</li>
+              <li>— коучи, терапевты, специалисты по телу и состоянию</li>
+              <li>— авторы курсов, программ и ретритов</li>
+              <li>— инвесторы и партнёры, которые хотят упаковать направление сильнее</li>
+            </ul>
+          </div>
+
+          <div class="rounded-[34px] bg-lilacSoft p-10 shadow-lilac ring-1 ring-lilac/18">
+            <div class="text-sm font-semibold uppercase tracking-[0.24em] text-orange">Почему с нами</div>
+            <h3 class="mt-4 text-2xl font-bold text-ink">Мы создаём не очередной wellness-контент, а премиальный слой вокруг бренда</h3>
+            <ul class="mt-6 space-y-4 text-muted">
+              <li>— понимаем трансформационные практики, гипноз, медитации и язык состояний</li>
+              <li>— умеем собирать контент, оффер, воронку и визуальную подачу в единую систему</li>
+              <li>— работаем на стыке биохакинга, wellness и эмоционального сторителлинга</li>
+              <li>— усиливаем восприятие бренда так, чтобы его было сложнее скопировать</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-24">
+      <div class="mx-auto max-w-5xl px-6 lg:px-8">
+        <div class="overflow-hidden rounded-[36px] bg-accent p-[1px] shadow-glow">
+          <div class="rounded-[35px] bg-white px-8 py-12 sm:px-12 sm:py-14">
+            <div class="mx-auto max-w-3xl text-center">
+              <div class="text-sm font-semibold uppercase tracking-[0.24em] text-orange">Контактный блок</div>
+              <h2 class="mt-4 text-3xl font-bold text-ink sm:text-4xl">Готовы усилить ваш продукт, бренд или направление</h2>
+              <p class="mt-5 text-lg leading-8 text-muted">
+                Если у вас уже есть продукт, аудитория или идея, мы покажем, как превратить это в более сильную, яркую и масштабируемую систему, которая выглядит премиально и продаёт увереннее.
+              </p>
+              <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+                <a href="mailto:info@example.com" class="rounded-full bg-accent px-8 py-4 text-base font-semibold text-white shadow-glow transition hover:-translate-y-0.5">Написать на e-mail</a>
+                <a href="https://t.me/your_username" class="rounded-full border border-orange/20 bg-white px-8 py-4 text-base font-semibold text-orange shadow-soft transition hover:bg-warm">Открыть Telegram</a>
+              </div>
+              <p class="mt-6 text-sm text-stone-500">Замените контакты на ваши реальные e-mail, Telegram, WhatsApp или ссылку на презентацию.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-orange/10 bg-white/80">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-stone-500 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      <div>© 2026 Усиление wellness-брендов</div>
+      <div>Премиальная упаковка продуктов, практик и направлений</div>
     </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="py-20 px-6 text-center">
-  <h2 class="text-3xl font-bold">Готовы усилить ваш бренд?</h2>
-  <p class="mt-4 text-gray-600">Оставьте заявку и получите стратегию роста</p>
-  <div class="mt-6">
-    <button class="bg-orange-500 text-white px-8 py-4 rounded-xl text-lg">
-      Связаться
-    </button>
-  </div>
-</section>
-
+  </footer>
 </body>
 </html>
