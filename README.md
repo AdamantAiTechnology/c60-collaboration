@@ -222,7 +222,7 @@ c60-collaboration-landing/
 
 ## 📞 Контакты для поддержки
 
-- **Email для инвесторов:** invest@full-energy-c60.com
+- **Email для инвесторов:** 
 - **Презентации:**
   - [Русская версия (Slides)](https://www.genspark.ai/slides?project_id=966a1602-d636-4846-96e6-235b2eca6d9e)
   - [English версия (Slides)](https://www.genspark.ai/slides?project_id=3a73cb35-76f9-45e7-b0a3-77c285fe6ace)
@@ -233,14 +233,4 @@ c60-collaboration-landing/
 
 © 2026 Full Energy × Ритуалы Трансформации. Все права защищены.
 
----
 
-## 🎯 Следующие шаги
-
-1. ✅ Разместите сайт на GitHub Pages
-2. 📧 Настройте контактную форму (Formspree)
-3. 📊 Добавьте аналитику (Google Analytics)
-4. 🌐 Подключите кастомный домен (опционально)
-5. 🚀 Поделитесь ссылкой с потенциальными инвесторами!
-
-**Успешного запуска!** 🎉
